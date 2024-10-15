@@ -3314,3 +3314,29 @@ input, select, textarea {
 			}
 
 	}
+
+/* Remove list dots in the Contact Me section */
+#four .contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Align icons and text */
+#four .contact-list li {
+    display: flex;
+    align-items: center; /* Vertically centers icon and text */
+    margin-bottom: 10px; /* Space between items, adjust as needed */
+}
+
+/* Contact Me Section Icons */
+#four .icon:before {
+    font-size: 2em; /* Adjust icon size as needed */
+    margin-right: 0.5em; /* Adds space between the icon and text */
+}
+
+/* Contact Me Section Text */
+#four .contact-text {
+    font-size: 1.2em; /* Increases the text size slightly */
+    vertical-align: middle;
+}
