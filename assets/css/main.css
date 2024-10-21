@@ -2701,7 +2701,7 @@ input, select, textarea {
 		-ms-justify-content: space-between;
 		justify-content: space-between;
 		background: #0f8da6;
-		color: #d2f2e9;
+		color: #61dbeb;
 		height: 100%;
 		overflow-y: auto;
 		position: fixed;
@@ -2724,7 +2724,7 @@ input, select, textarea {
 		}
 
 		#header a {
-			color: #d2f2e9;
+			color: #75deec;
 		}
 
 			#header a:hover {
@@ -2751,7 +2751,7 @@ input, select, textarea {
 			}
 
 			#header > header p {
-				color: #d2f2e9;
+				color: #75deec;
 				font-style: italic;
 				margin: 1em 0 0 0;
 			}
@@ -2789,7 +2789,7 @@ input, select, textarea {
 			}
 
 				#header > nav ul li {
-					border-top: solid 2px #5ccfb1;
+					border-top: solid 2px #75deec;
 					display: block;
 					padding: 0;
 				}
@@ -3339,4 +3339,53 @@ input, select, textarea {
 #four .contact-text {
     font-size: 1.2em; /* Increases the text size slightly */
     vertical-align: middle;
+}
+
+/* Styling for the image gallery */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    position: relative;
+}
+
+.image-gallery a {
+    position: relative;
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for image */
+.image-gallery a:hover img {
+    transform: scale(1.05);
+}
+
+/* Caption styling */
+.image-gallery .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0f8da6;
+    color: #fff;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+/* Show caption on hover */
+.image-gallery a:hover .caption {
+    opacity: 1;
 }
